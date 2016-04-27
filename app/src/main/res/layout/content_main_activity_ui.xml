@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.george.petapp.MainActivityUI"
+    android:background="#eb17eec3"
+    android:padding="5dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lost "
+        android:id="@+id/lostButtonId"
+        android:layout_gravity="left"
+        android:clickable="true"
+        android:background="#c44c53e3"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:padding="15dp"
+        android:layout_margin="1dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="found"
+        android:id="@+id/foundButtonId"
+        android:background="#c44c53e3"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_alignTop="@+id/lostButtonId"
+        android:layout_toRightOf="@+id/lostButtonId"
+        android:layout_toEndOf="@+id/lostButtonId" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:id="@+id/mapButtonId"
+        android:background="#c44c53e3"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="false"
+        android:padding="15dp"
+        android:layout_toEndOf="@+id/foundButtonId"
+        android:layout_margin="1dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lostButtonId"
+        android:layout_margin="2dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_bright"
+        android:clickable="true"
+        android:contextClickable="true" />
+
+</RelativeLayout>
