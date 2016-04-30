@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivityUI extends AppCompatActivity {
-    private List<Feed> myFeed = new ArrayList<Feed>();
+ //   private List<Feed> myFeed = new ArrayList<Feed>();
 
 
     @Override
@@ -27,7 +27,7 @@ public class MainActivityUI extends AppCompatActivity {
     }
 
     private void populateFeedList() {
-        myFeed.add(new)
+
     }
 
 }
