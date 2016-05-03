@@ -14,11 +14,53 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:src="@drawable/Dog"
+            android:id="@+id/icon_id"
+            android:src="@drawable/dog"
             android:longClickable="false"
             android:nestedScrollingEnabled="false"
             android:maxHeight="80dp"
-            android:maxWidth="80dp" />
+            android:maxWidth="80dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="pet pics" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Pet Name Here"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/icon_id"
+            android:layout_toEndOf="@+id/icon_id"
+            android:id="@+id/Pet_Name_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Persons Name Here"
+            android:id="@+id/Person_name_id"
+            android:layout_alignBottom="@+id/icon_id"
+            android:layout_toRightOf="@+id/icon_id"
+            android:layout_toEndOf="@+id/icon_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pet Type Here"
+            android:id="@+id/Pet_type_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Contact Info Here"
+            android:id="@+id/Contact_Info_id"
+            android:layout_alignTop="@+id/Person_name_id"
+            android:layout_alignRight="@+id/Pet_type_id"
+            android:layout_alignEnd="@+id/Pet_type_id" />
     </RelativeLayout>
 </RelativeLayout>

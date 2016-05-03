@@ -15,11 +15,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:src="@drawable/Dog"
+            android:id="@+id/icon_id"
+            android:src="@drawable/dog"
             android:maxHeight="80dp"
             android:maxWidth="80dp"
-            android:adjustViewBounds="true" />
+            android:adjustViewBounds="true"
+            android:contentDescription="dog pic" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,8 +29,8 @@
             android:text="Pet Name Here"
             android:id="@+id/Pet_Name_id"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imageView"
-            android:layout_toEndOf="@+id/imageView" />
+            android:layout_toRightOf="@+id/icon_id"
+            android:layout_toEndOf="@+id/icon_id" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,9 +38,9 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Persons Name Here"
             android:id="@+id/Person_name_id"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_toRightOf="@+id/imageView"
-            android:layout_toEndOf="@+id/imageView" />
+            android:layout_alignBottom="@+id/icon_id"
+            android:layout_toRightOf="@+id/icon_id"
+            android:layout_toEndOf="@+id/icon_id" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Dog"
+        android:src="@drawable/dog"
         android:maxWidth="100dp"
         android:maxHeight="100dp"
         android:adjustViewBounds="true"

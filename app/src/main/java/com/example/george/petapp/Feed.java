@@ -17,7 +17,7 @@ public class Feed  {
     private String breed;
     private String gender;
     private String description;
-    private Image photo;
+    private int photo;/// had to change it to Int because it would not work with type Image
     private String userName;
     private String address;
     private String city;
@@ -25,6 +25,15 @@ public class Feed  {
     private int zip;
     private int phoneNumber;
 
+    // to test list view.
+    public Feed(String petName,String petType,String userName,String email,int photo ){
+        super();
+        this.petName = petName;
+        this.petType = petName;
+        this.userName = userName;
+        this.email = email;
+        this.photo = photo;
+    }
 
     public int getFeed_id() {
         return feed_id;
@@ -106,11 +115,11 @@ public class Feed  {
         this.description = description;
     }
 
-    public Image getPhoto() {
+    public int getPhoto() {
         return photo;
     }
 
-    public void setPhoto(Image photo) {
+    public void setPhoto(int photo) {
         this.photo = photo;
     }
 

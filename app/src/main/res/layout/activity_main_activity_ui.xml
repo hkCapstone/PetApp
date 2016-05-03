@@ -23,6 +23,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main_activity_ui" />
+    <include layout="@layout/content_main_activity_ui"
+        android:id="@+id/feedListView" />
 
 </android.support.design.widget.CoordinatorLayout>
