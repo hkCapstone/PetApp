@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,10 @@ public class MainActivityUI extends AppCompatActivity {
     private void populateListView() {
         ArrayAdapter<Feed> adapter = new MyListAdapter();
         ListView list = (ListView) findViewById(R.id.feedListView);
-        list.setAdapter(adapter);
+
+        if (list != null) {
+            list.setAdapter(adapter);
+        }
     }
 
     private class MyListAdapter extends ArrayAdapter<Feed>{
@@ -59,8 +63,22 @@ public class MainActivityUI extends AppCompatActivity {
 
 
             // fill the view
-            ImageView imageView = (ImageView)itemView.findViewById(R.id.icon_id);
+           ImageView imageView = (ImageView)itemView.findViewById(R.id.icon_id);
             imageView.setImageResource(CurrentFeed.getPhoto());
+
+           // TextView
+            TextView petNameText = (TextView) itemView.findViewById(R.id.Pet_Name_id);
+            petNameText.setText(CurrentFeed.getPetName());
+
+            TextView userNameText = (TextView) itemView.findViewById(R.id.User_Name_id);
+            userNameText.setText(CurrentFeed.getUserName());
+
+            TextView petTypeText = (TextView) itemView.findViewById(R.id.Pet_type_id);
+            petTypeText.setText(CurrentFeed.getPetType());
+
+            TextView contactInfoText = (TextView) itemView.findViewById(R.id.Contact_Info_id);
+            contactInfoText.setText(CurrentFeed.getEmail());
+
             //
             return itemView;
         }
