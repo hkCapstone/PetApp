@@ -19,7 +19,7 @@ public class MainActivityUI extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_activity_ui);
+        setContentView(R.layout.content_main_activity_ui);
 
         populateFeedList();
         populateListView();
@@ -38,11 +38,10 @@ public class MainActivityUI extends AppCompatActivity {
 
     private void populateListView() {
         ArrayAdapter<Feed> adapter = new MyListAdapter();
-        ListView list = (ListView) findViewById(R.id.feedListView);
+        ListView list = (ListView) findViewById(R.id.listView);
 
-        if (list != null) {
-            list.setAdapter(adapter);
-        }
+        list.setAdapter(adapter);
+
     }
 
     private class MyListAdapter extends ArrayAdapter<Feed>{
@@ -70,7 +69,7 @@ public class MainActivityUI extends AppCompatActivity {
             TextView petNameText = (TextView) itemView.findViewById(R.id.Pet_Name_id);
             petNameText.setText(CurrentFeed.getPetName());
 
-            TextView userNameText = (TextView) itemView.findViewById(R.id.User_Name_id);
+            TextView userNameText = (TextView) itemView.findViewById(R.id.Person_name_id);
             userNameText.setText(CurrentFeed.getUserName());
 
             TextView petTypeText = (TextView) itemView.findViewById(R.id.Pet_type_id);
