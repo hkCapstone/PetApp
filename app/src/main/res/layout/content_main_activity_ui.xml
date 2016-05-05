@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="lost "
+        android:text="@string/lost_button"
         android:id="@+id/lostButtonId"
         android:layout_gravity="left"
         android:clickable="true"
@@ -25,7 +26,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="found"
+        android:text="@string/found_button"
         android:id="@+id/foundButtonId"
         android:background="#c44c53e3"
         android:clickable="true"
@@ -38,28 +39,32 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Map"
+        android:text="@string/map_button"
         android:id="@+id/mapButtonId"
         android:background="#c44c53e3"
         android:clickable="true"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="false"
         android:padding="15dp"
-        android:layout_toEndOf="@+id/foundButtonId"
-        android:layout_margin="1dp" />
-
+        android:layout_alignTop="@+id/foundButtonId"
+        android:layout_toRightOf="@+id/foundButtonId"
+        android:layout_toEndOf="@+id/foundButtonId" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lostButtonId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="492dp"
         android:id="@+id/listView"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/lostButtonId"
         android:layout_margin="2dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
+
         android:background="@android:color/holo_blue_bright"
         android:clickable="true"
         android:contextClickable="true" />
+    </LinearLayout>
 
 </RelativeLayout>

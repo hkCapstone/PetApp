@@ -29,7 +29,7 @@ public class Feed  {
     public Feed(String petName,String petType,String userName,String email,int photo ){
         super();
         this.petName = petName;
-        this.petType = petName;
+        this.petType = petType;
         this.userName = userName;
         this.email = email;
         this.photo = photo;
@@ -170,5 +170,7 @@ public class Feed  {
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+
 
 }
